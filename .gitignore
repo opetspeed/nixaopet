@@ -1,8 +1,4 @@
-*.session
-*.session-journal
 .env
-__pycache__
-.idea
-.vscode
-raw_files
-downloads
+PyroBot/BotzHub.session-journal
+PyroBot/BotzHub.session
+__pycache__/
