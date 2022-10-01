@@ -4,7 +4,7 @@ ffmpeg-python
 py-tgcalls==0.8.1
 pyrogram==1.4.16
 youtube-search-python==1.4.9
-yt-dlp==2021.12.01
+yt-dlp==2022.9.1
 youtube-search
 python-dotenv
 dnspython
@@ -19,4 +19,4 @@ psutil
 future
 wget
 pyyaml==5.3.1
-telethon
+telethon==1.25.2
