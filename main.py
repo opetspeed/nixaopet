@@ -1,17 +1,28 @@
+import os
+import sys
+import random
 import asyncio
-from pytgcalls import idle
-from NIXA.main import call_py, bot, BOT
+import telethon.utils
+from telethon import TelegramClient, events
+from config import API_HASH, API_ID, BOT_TOKEN, SESSION_NAME
+from pyrogram import Client
+from pytgcalls import PyTgCalls
 
-async def start_bot():
-    print("[INFO]: STARTING BOT CLIENT")
-    await bot.start()
-    print("[INFO]: STARTING PYTGCALLSS CLIENT")
-    await call_py.start()
-    await idle()
-    print("[INFO]: STOPPING BOT & USERBOT")
-    await bot.stop()
+bot = Client(
+    ":memory:",
+    API_ID,
+    API_HASH,
+    bot_token=BOT_TOKEN,
+    plugins={"root": "NIXA.Plugins"},
+)
 
+BOT = TelegramClient('BOT', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(start_bot())
-BOT.run_until_disconnected()
+user = Client(
+    SESSION_NAME,
+    api_id=API_ID,
+    api_hash=API_HASH,
+)
+
+Test = Client(SESSION_NAME, api_id=API_ID, api_hash=API_HASH, plugins={'root': 'NIXA.Plugins'})
+call_py = PyTgCalls(Test)
