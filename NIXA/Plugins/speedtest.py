@@ -10,13 +10,13 @@ from config import SUDO_USERS as SUDOERS
 @app.on_message(filters.command("speedtest") & ~filters.edited)
 async def run_speedtest(_, message):
     userid = message.from_user.id
-    m = await message.reply_text("__Processing__...")
+    m = await message.reply_text("⇋ ᴘʀᴏᴄᴇssɪɴɢ...")
     try:
         test = speedtest.Speedtest()
         test.get_best_server()
-        m = await m.edit("🔥 __running download speedtest__")
+        m = await m.edit("⇋ ʀᴜɴɴɪɴɢ ᴅᴏᴡɴʟᴏᴀᴅ sᴘᴇᴇᴅᴛᴇsᴛ")
         test.download()
-        m = await m.edit("🔥 __running upload speedtest__")
+        m = await m.edit("⇋ ʀᴜɴɴɪɴɢ ᴜᴘʟᴏᴀᴅ sᴘᴇᴇᴅᴛᴇsᴛ")
         test.upload()
         test.results.share()
     except speedtest.ShareResultsConnectFailure:
@@ -25,7 +25,7 @@ async def run_speedtest(_, message):
         await m.edit_text(e)
         return
     result = test.results.dict()
-    m = await m.edit_text("💠 Sharing Speedtest")
+    m = await m.edit_text("⇋ sʜᴀʀɪɴɢ sᴘᴇᴇᴅᴛᴇsᴛ")
     if result["share"]:
         path = wget.download(result["share"])
         try:
@@ -34,18 +34,23 @@ async def run_speedtest(_, message):
             c.save(path)
         except BaseException:
             pass
-    output = f"""💡 **SpeedTest Results**
-    
-<u>**Client:**</u>
-**ISP:** {result['client']['isp']}
-**Country:** {result['client']['country']}
-  
-<u>**Server:**</u>
-**Name:** {result['server']['name']}
-**Country:** {result['server']['country']}, {result['server']['cc']}
-**Sponsor:** {result['server']['sponsor']}
-**Latency:** {result['server']['latency']}  
-⚡ **Ping:** {result['ping']}"""
+    output = f"""
+┌─────────────────────
+│➺ **sᴘᴇᴇᴅ ᴛᴇsᴛ ʀᴇsᴜʟᴛs**
+│    
+│✱<u>**ᴄʟɪᴇɴᴛ:**</u>
+│➤**ɪsᴘ:** {result['client']['isp']}
+│➤**ᴄᴏᴜɴᴛʀʏ:** {result['client']['country']}
+│ 
+│✱<u>**sᴇʀᴠᴇʀ:**</u>
+│
+│➤**ɴᴀᴍᴇ:** {result['server']['name']}
+│➤**ᴄᴏᴜɴᴛʀʏ:** {result['server']['country']}, {result['server']['cc']}
+│➤**sᴘᴏɴsᴏʀ:** {result['server']['sponsor']}
+│➤**ʟᴀᴛᴇɴᴄʏ:** {result['server']['latency']}  
+│➤**ᴘ ᴏ ɴ ɢ:** {result['ping']}
+└─────────────────────
+"""
     if result["share"]:
         msg = await app.send_photo(
             chat_id=message.chat.id, photo=path, caption=output
