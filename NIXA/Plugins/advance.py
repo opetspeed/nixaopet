@@ -33,7 +33,7 @@ async def alive(event):
                                   caption=NIXA,
                                   buttons=[
         [
-        Button.url("🎓 ᴄʜᴀɴɴᴇʟ", "https://t.me/TechQuard"),
+        Button.url("🎓 ᴄʜᴀɴɴᴇʟ", "https://t.me/TheBotsUpdate"),
         Button.url("🎌 sᴜᴘᴘᴏʀᴛ", "https://t.me/TheSupportBots")
         ],
         [
