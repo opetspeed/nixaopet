@@ -140,7 +140,7 @@ async def play(c: Client, m: Message):
                    [
     [
       InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/TheSupportBots"),
-      InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/TechQuard"),
+      InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/TheBotsUpdate"),
     ],
     [
       InlineKeyboardButton(text="✚ ᴍᴇɴᴜ", callback_data="cbmenu"),
@@ -258,7 +258,7 @@ async def play(c: Client, m: Message):
                     [
                         [
                             InlineKeyboardButton("🔏 sᴜᴘᴘᴏʀᴛ", url="https://t.me/TheSupportBots"),
-                            InlineKeyboardButton("🎓 ᴜᴘᴅᴀᴛᴇs", url="https://t.me/TechQuard")
+                            InlineKeyboardButton("🎓 ᴜᴘᴅᴀᴛᴇs", url="https://t.me/TheBotsUpdate")
                         ],
                         [
                             InlineKeyboardButton("⟲ ᴄʟᴏsᴇ ⟳", callback_data="cls")
