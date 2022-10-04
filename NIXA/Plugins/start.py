@@ -104,7 +104,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],
             [
                 InlineKeyboardButton("👥 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP_SUPPORT}"),
-                InlineKeyboardButton("📢 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/TechQuard"),
+                InlineKeyboardButton("📢 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/TheBotsUpdate"),
             ],
             [
                 InlineKeyboardButton("📄 ʜᴇʟᴘ ᴀɴᴅ ᴄᴍᴅ", callback_data="help"),
@@ -231,7 +231,7 @@ async def start(client: Client, message: Message):
             ],
             [
                 InlineKeyboardButton("👥 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP_SUPPORT}"),
-                InlineKeyboardButton("📢 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/TechQuard"),
+                InlineKeyboardButton("📢 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/TheBotsUpdate"),
             ],
             [
                 InlineKeyboardButton("📄 ʜᴇʟᴘ ᴀɴᴅ ᴄᴍᴅ", callback_data="help"),
