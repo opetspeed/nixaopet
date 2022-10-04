@@ -30,7 +30,7 @@ def stream_markup(user_id):
   buttons = [
     [
       InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/TheSupportBots"),
-      InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/TechQuard"),
+      InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/TheBotsUpdate"),
     ],
     [
       InlineKeyboardButton(text="✚ ᴍᴇɴᴜ", callback_data="cbmenu"),
@@ -66,7 +66,7 @@ def audio_markup(user_id):
   buttons = [
     [
       InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/TheSupportBots"),
-      InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/TechQuard"),
+      InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/TheBotsUpdate"),
     ],
     [
       InlineKeyboardButton(text="✚ ᴍᴇɴᴜ", callback_data="cbmenu"),
