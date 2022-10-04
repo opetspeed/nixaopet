@@ -183,7 +183,7 @@ async def vplay(c: Client, m: Message):
                     [
                         [
                             InlineKeyboardButton("🔏 sᴜᴘᴘᴏʀᴛ", url="https://t.me/TheSupportBots"),
-                            InlineKeyboardButton("🎓 ᴜᴘᴅᴀᴛᴇs", url="https://t.me/TechQuard")
+                            InlineKeyboardButton("🎓 ᴜᴘᴅᴀᴛᴇs", url="https://t.me/TheBotsUpdate")
                         ],
                         [
                             InlineKeyboardButton("⟲ ᴄʟᴏsᴇ ⟳", callback_data="cls")
@@ -260,7 +260,7 @@ async def vplay(c: Client, m: Message):
                     [
                         [
                             InlineKeyboardButton("🔏 sᴜᴘᴘᴏʀᴛ", url="https://t.me/TheSupportBots"),
-                            InlineKeyboardButton("🎓 ᴜᴘᴅᴀᴛᴇs", url="https://t.me/TechQuard")
+                            InlineKeyboardButton("🎓 ᴜᴘᴅᴀᴛᴇs", url="https://t.me/TheBotsUpdate")
                         ],
                         [
                             InlineKeyboardButton("⟲ ᴄʟᴏsᴇ ⟳", callback_data="cls")
