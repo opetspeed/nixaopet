@@ -221,7 +221,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             pass
 
 
-@Client.on_message(filters.command(["start"]) & filters.private)
+@Client.on_message(filters.command(["xstart"]) & filters.private)
 async def start(client: Client, message: Message):
     get_me = await client.get_me()
     USERNAME = get_me.username
