@@ -51,11 +51,11 @@ def menu_markup(user_id):
      ],
      [
       InlineKeyboardButton(text="🔇", callback_data=f'cbmute | {user_id}'),
-      InlineKeyboardButton(text="ᴜᴩᴅᴀᴛᴇs", url=f"https://t.me/TechQuard"),
+      InlineKeyboardButton(text="ᴜᴩᴅᴀᴛᴇs", url=f"https://t.me/TheBotsSupport"),
       InlineKeyboardButton(text="🔊", callback_data=f'cbunmute | {user_id}')
      ],
      [
-      InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ",callback_data="cbhome",)
+      InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ",callback_data="cbhome")
      ],
   ]   
   return buttons
