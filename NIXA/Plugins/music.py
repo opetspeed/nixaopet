@@ -139,8 +139,8 @@ async def play(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
                    [
     [
-      InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/TheSupportBots"),
-      InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/TheBotsUpdate"),
+      InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/AstroMusikk"),
+      InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/AstroMusikk"),
     ],
     [
       InlineKeyboardButton(text="✚ ᴍᴇɴᴜ", callback_data="cbmenu"),
@@ -257,8 +257,8 @@ async def play(c: Client, m: Message):
                       reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🔏 sᴜᴘᴘᴏʀᴛ", url="https://t.me/TheSupportBots"),
-                            InlineKeyboardButton("🎓 ᴜᴘᴅᴀᴛᴇs", url="https://t.me/TheBotsUpdate")
+                            InlineKeyboardButton("🔏 sᴜᴘᴘᴏʀᴛ", url="https://t.me/AstroMusikk"),
+                            InlineKeyboardButton("🎓 ᴜᴘᴅᴀᴛᴇs", url="https://t.me/AstroMusikk")
                         ],
                         [
                             InlineKeyboardButton("⟲ ᴄʟᴏsᴇ ⟳", callback_data="cls")
